@@ -48,6 +48,7 @@
   <p>Hi! I'm Doramon, I can take out different kind of gadget. Say Hello!</p>
   <input id="Name" placeholder="Your name">
   <input id="Email" placeholder="Your email">
+  <input id="play" placeholder="What do you like to play?">
   <input id="submit" type="submit">
   <script type="module">
     // Import the functions you need from the SDKs you need
@@ -74,6 +75,7 @@
 
 	const Name = document.querySelector("#Name") 
 	const Email = document.querySelector("#Email")
+	const play = document.querySelector("#play")
 	document.querySelector('#submit').addEventListener('click', Submit)
 	
 	function Submit() {
@@ -82,10 +84,12 @@
 	  set(ref(db, timestamp), {
 		  Name: Name.value,
 	      email: Email.value,
+		  play: play.value,
 	  });
 
 	  Name.value = ""
 	  Email.value = ""
+	  play.value =""
 	}
 
 	function buildTimestamp() {
