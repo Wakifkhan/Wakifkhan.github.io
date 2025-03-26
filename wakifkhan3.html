@@ -88,6 +88,10 @@ small {
 .dessert{
   background-image: url("https://www.shanesribshack.com/media/2435/10-pc-boneless-wings-w-ff-honey-bbq.jpg?width=1387&height=782&mode=crop&center=0.5,0.5&overlay=image-frame-wide.png&overlay.position=0,0&overlay.size=1387,782&quality=80");
 }
+.forth{
+	background-image:
+url(https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2021/09/03/lalbag_4.jpg);
+}
 .price {
   float: right;
 }
@@ -138,6 +142,13 @@ small {
   <small>6pc hot wings with fries is a tasty meal that includes six crispy chicken wings covered in a spicy sauce, served with a side of golden, crispy French fries. The wings are cooked until crispy on the outside and tender on the inside, with a bold, spicy flavor. The fries are perfectly seasoned and make a great complement to the wings. It's a simple, satisfying meal that’s perfect for a quick snack or casual meal.</small></p>
 </div>
 
+
+<div class="forth">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>kichuri with beef <span class="price">$13</span><br />
+  <small>Kichuri with beef is a delicious dish where tender, spiced beef is served on top of soft, flavored rice. The beef is cooked with spices like cumin, garlic, and cinnamon, giving it a rich taste. The rice is also seasoned with spices to match the beef.</small></p>
+</div>
+
  <br><br>
 <input id="Name" placeholder="Your name">
   <input id="Email" placeholder="Your email">
@@ -177,7 +188,7 @@ small {
 	const quantities = document.querySelectorAll(".quantities")
 	const prices = document.querySelectorAll(".price") 
 	document.querySelector('#submit').addEventListener('click', Submit)
-	const itemsList = [" Chicken over Rice ", "Lamb rice", "6pc hot wings with fries"]
+	const itemsList = [" Chicken over Rice ", "Lamb rice", "6pc hot wings with fries", "kichuri with beef"]
 	
 	
 	function Submit() {
